@@ -1,0 +1,52 @@
+df=pd.DataFrame()
+
+filename_1 = '../../data/18-83510-I94-Data-2016/' + i94_files[0]
+filename_2 = '../../data/18-83510-I94-Data-2016/' + i94_files[1]
+filename_3 = '../../data/18-83510-I94-Data-2016/' + i94_files[2]
+filename_4 = '../../data/18-83510-I94-Data-2016/' + i94_files[3]
+filename_5 = '../../data/18-83510-I94-Data-2016/' + i94_files[4]
+filename_6 = '../../data/18-83510-I94-Data-2016/' + i94_files[5]
+filename_7 = '../../data/18-83510-I94-Data-2016/' + i94_files[6]
+filename_8 = '../../data/18-83510-I94-Data-2016/' + i94_files[7]
+filename_9 = '../../data/18-83510-I94-Data-2016/' + i94_files[8]
+filename_10 = '../../data/18-83510-I94-Data-2016/' + i94_files[9]
+filename_11 = '../../data/18-83510-I94-Data-2016/' + i94_files[10]
+filename_12 = '../../data/18-83510-I94-Data-2016/' + i94_files[11]
+
+
+df1=pd.read_sas(filename_1)
+df2=pd.read_sas(filename_2)
+df3=pd.read_sas(filename_3)
+df4=pd.read_sas(filename_4)
+df5=pd.read_sas(filename_5)
+df6=pd.read_sas(filename_6)
+df7=pd.read_sas(filename_7)
+df8=pd.read_sas(filename_8)
+df9=pd.read_sas(filename_9)
+df10=pd.read_sas(filename_10)
+df11=pd.read_sas(filename_11)
+df12=pd.read_sas(filename_12)
+
+
+df=df.append(df1)
+df=df.append(df2)
+df=df.append(df3)
+df=df.append(df4)
+df=df.append(df5)
+df=df.append(df6)
+df=df.append(df7)
+df=df.append(df8)
+df=df.append(df9)
+df=df.append(df10)
+df=df.append(df11)
+df=df.append(df12)
+
+df.head()
+
+
+#for file in i94_files:
+ #   filename = '../../data/18-83510-I94-Data-2016/' + file
+  #  df1=pd.read_sas(filename)
+   # df=df.append(df1)
+    
+#df.head()
